@@ -487,7 +487,7 @@ If you find this repository useful in your own project, survey, or reading group
 ```bibtex
 @misc{awesome4dgs,
   title        = {Awesome 4D Gaussian Splatting},
-  author       = {Duyan Xi and contributors},
+  author       = {Yanxi Du},
   year         = {2026},
   howpublished = {\url{https://github.com/duyanxi/awesome-4DGS}},
   note         = {Curated repository of papers, code, and research notes for 4D Gaussian Splatting}
