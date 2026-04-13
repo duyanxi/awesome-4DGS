@@ -2,7 +2,7 @@
 
 > A curated repository of papers, code, benchmarks, and research notes for **4D Gaussian Splatting (4DGS)**, spanning dynamic scene reconstruction, native 4D representations, compression, editing, and domain-specific applications such as avatars and surgical scenes.
 
-
+Work in progress.
 ## Overview
 
 **3D Gaussian Splatting (3DGS)** represents a static scene with a set of anisotropic Gaussians that can be rasterized efficiently for high-quality real-time rendering.  
@@ -44,49 +44,49 @@ These methods adapt 4DGS to structured settings such as surgical videos, avatars
 
 ### Representation
 
-- **4D Gaussian Splatting for Real-Time Dynamic Scene Rendering (2024)** [[paper](https://arxiv.org/abs/2310.08528)] [[project](https://guanjunwu.github.io/4dgs/)]
+- **4D Gaussian Splatting for Real-Time Dynamic Scene Rendering (2024)** [[paper](https://arxiv.org/abs/2310.08528)] [[project](https://guanjunwu.github.io/4dgs/)] [[code](https://github.com/hustvl/4DGaussians)]
   - ⭐ Key idea: models dynamic scenes with explicit 3D Gaussians plus decomposed 4D neural voxels to achieve real-time rendering without training a separate model per frame.
   - 🧩 Category: Representation
   - 🏷️ Tags: real-time, hybrid explicit-implicit, canonical deformation
 
-- **4D-Rotor Gaussian Splatting: Towards Efficient Novel View Synthesis for Dynamic Scenes (2024)** [[paper](https://arxiv.org/abs/2402.03307)] [[code](https://github.com/weify627/4D-Rotor-Gaussians)]
+- **4D-Rotor Gaussian Splatting: Towards Efficient Novel View Synthesis for Dynamic Scenes (2024)** [[paper](https://arxiv.org/abs/2402.03307)] [[project](https://weify627.github.io/4drotorgs/)] [[code](https://github.com/weify627/4D-Rotor-Gaussians)]
   - ⭐ Key idea: represents the scene directly with native anisotropic XYZT Gaussians and rotor-based transforms to avoid heavy deformation machinery.
   - 🧩 Category: Representation
   - 🏷️ Tags: native-4D, efficient, real-time
 
-- **Spacetime Gaussian Feature Splatting for Real-Time Dynamic View Synthesis (2024)** [[paper](https://arxiv.org/abs/2312.16812)] [[project](https://oppo-us-research.github.io/SpacetimeGaussians-website/)]
+- **Spacetime Gaussian Feature Splatting for Real-Time Dynamic View Synthesis (2024)** [[paper](https://arxiv.org/abs/2312.16812)] [[project](https://oppo-us-research.github.io/SpacetimeGaussians-website/)] [[code](https://github.com/oppo-us-research/SpacetimeGaussians)]
   - ⭐ Key idea: augments Gaussians with temporal opacity, parametric motion, and neural feature splatting to better capture transient content and view-time dependent appearance.
   - 🧩 Category: Representation
   - 🏷️ Tags: real-time, feature-rendering, high-resolution
 
-- **ST-4DGS: Spatial-Temporally Consistent 4D Gaussian Splatting for Efficient Dynamic Scene Rendering (2024)** [[code](https://github.com/wanglids/ST-4DGS)]
+- **ST-4DGS: Spatial-Temporally Consistent 4D Gaussian Splatting for Efficient Dynamic Scene Rendering (2024)** [[paper](https://dl.acm.org/doi/10.1145/3641519.3657520)] [[code](https://github.com/wanglids/ST-4DGS)]
   - ⭐ Key idea: improves 4D Gaussian compactness and surface adherence by enforcing spatial-temporal consistency during motion-aware reconstruction.
   - 🧩 Category: Representation
   - 🏷️ Tags: real-time, compactness, consistency
 
-- **4D Gaussian Splatting: Modeling Dynamic Scenes with Native 4D Primitives (2024)** [[paper](https://arxiv.org/abs/2412.20720)] [[code](https://github.com/fudan-zvg/4d-gaussian-splatting)]
+- **4D Gaussian Splatting: Modeling Dynamic Scenes with Native 4D Primitives (2024)** [[paper](https://arxiv.org/abs/2412.20720)] [[project](https://fudan-zvg.github.io/4d-gaussian-splatting/)] [[code](https://github.com/fudan-zvg/4d-gaussian-splatting)]
   - ⭐ Key idea: treats a dynamic scene as a true spatiotemporal volume of native 4D Gaussians optimized directly from photometric evidence.
   - 🧩 Category: Representation
   - 🏷️ Tags: native-4D, photometric-only, continuous-time
 
-- **7DGS: Unified Spatial-Temporal-Angular Gaussian Splatting (2025)** [[paper](https://arxiv.org/abs/2503.07946)]
+- **7DGS: Unified Spatial-Temporal-Angular Gaussian Splatting (2025)** [[paper](https://arxiv.org/abs/2503.07946)] [[project](https://gaozhongpai.github.io/7dgs/)]
   - ⭐ Key idea: extends Gaussian parameterization from 4D space-time to 7D space-time-viewing direction so dynamics and view-dependent effects are modeled jointly.
   - 🧩 Category: Representation
   - 🏷️ Tags: view-dependent, unified-model, dynamic appearance
 
 ### Motion Modeling
 
-- **GaussianFlow: Splatting Gaussian Dynamics for 4D Content Creation (2024)** [[paper](https://arxiv.org/abs/2403.12365)] [[project](https://zerg-overmind.github.io/GaussianFlow.github.io/)]
+- **GaussianFlow: Splatting Gaussian Dynamics for 4D Content Creation (2024)** [[paper](https://arxiv.org/abs/2403.12365)] [[project](https://zerg-overmind.github.io/GaussianFlow.github.io/)] [[code](https://github.com/Zerg-Overmind/GaussianFlow)]
   - ⭐ Key idea: introduces Gaussian flow by splatting 3D Gaussian dynamics into dense 2D motion fields to stabilize motion learning for 4D generation and rendering.
   - 🧩 Category: Motion Modeling
   - 🏷️ Tags: optical-flow, motion-supervision, generation
 
-- **Fully Explicit Dynamic Gaussian Splatting (2024)** [[paper](https://arxiv.org/abs/2410.15629)] [[code](https://github.com/juno181/Ex4DGS)]
+- **Fully Explicit Dynamic Gaussian Splatting (2024)** [[paper](https://arxiv.org/abs/2410.15629)] [[project](https://leejunoh.com/Ex4DGS/)] [[code](https://github.com/juno181/Ex4DGS)]
   - ⭐ Key idea: explicitly samples dynamic Gaussian poses at sparse timestamps and interpolates them to reduce computation while separating static and dynamic content.
   - 🧩 Category: Motion Modeling
   - 🏷️ Tags: explicit-dynamics, interpolation, static-dynamic split
 
-- **SplineGS: Robust Motion-Adaptive Spline for Real-Time Dynamic 3D Gaussians from Monocular Video (2025)** [[paper](https://papers.cool/venue/Park_SplineGS_Robust_Motion-Adaptive_Spline_for_Real-Time_Dynamic_3D_Gaussians_from%40CVPR2025%40CVF)]
+- **SplineGS: Robust Motion-Adaptive Spline for Real-Time Dynamic 3D Gaussians from Monocular Video (2025)** [[paper](https://arxiv.org/abs/2412.09982)] [[code](https://github.com/KAIST-VICLab/SplineGS)]
   - ⭐ Key idea: models Gaussian trajectories with motion-adaptive cubic splines and prunes control points to capture complex motion efficiently from monocular input.
   - 🧩 Category: Motion Modeling
   - 🏷️ Tags: monocular, spline-motion, COLMAP-free
@@ -98,7 +98,7 @@ These methods adapt 4DGS to structured settings such as surgical videos, avatars
 
 ### Sparse-view / Few-shot
 
-- **MoSca: Dynamic Gaussian Fusion from Casual Videos via 4D Motion Scaffolds (2025)** [[paper](https://arxiv.org/abs/2405.17421)] [[project](https://www.cis.upenn.edu/~leijh/projects/mosca/)]
+- **MoSca: Dynamic Gaussian Fusion from Casual Videos via 4D Motion Scaffolds (2025)** [[paper](https://arxiv.org/abs/2405.17421)] [[project](https://www.cis.upenn.edu/~leijh/projects/mosca/)] [[code](https://github.com/JiahuiLei/MoSca)]
   - ⭐ Key idea: introduces 4D motion scaffolds that provide structured motion priors, making dynamic Gaussian fusion work better for casual and sparse observations.
   - 🧩 Category: Sparse-view / Few-shot
   - 🏷️ Tags: casual video, motion prior, sparse-view
@@ -113,7 +113,7 @@ These methods adapt 4DGS to structured settings such as surgical videos, avatars
   - 🧩 Category: Sparse-view / Few-shot
   - 🏷️ Tags: few-shot, denoising, robust reconstruction
 
-- **Mono4DGS-HDR: High Dynamic Range 4D Gaussian Splatting from Alternating-exposure Monocular Videos (2025)** [[paper](https://arxiv.org/abs/2510.18489)] [[project](https://liujf1226.github.io/Mono4DGS-HDR/)]
+- **Mono4DGS-HDR: High Dynamic Range 4D Gaussian Splatting from Alternating-exposure Monocular Videos (2025)** [[paper](https://arxiv.org/abs/2510.18489)] [[project](https://liujf1226.github.io/Mono4DGS-HDR/)] [[code](https://github.com/shaham12/Mono4DGS-HDR)]
   - ⭐ Key idea: reconstructs HDR 4D scenes from unposed alternating-exposure monocular videos by combining geometric initialization, static HDR estimation, and temporally regularized dynamic optimization.
   - 🧩 Category: Sparse-view / Few-shot
   - 🏷️ Tags: monocular, HDR, in-the-wild
@@ -135,12 +135,12 @@ These methods adapt 4DGS to structured settings such as surgical videos, avatars
   - 🧩 Category: Real-time / Mobile / Efficient
   - 🏷️ Tags: compact model, compression, deployment
 
-- **GIFStream: 4D Gaussian-based Immersive Video with Feature Stream (2025)** [[paper](https://arxiv.org/abs/2505.07539)] [[project](https://xdimlab.github.io/GIFStream/)]
+- **GIFStream: 4D Gaussian-based Immersive Video with Feature Stream (2025)** [[paper](https://arxiv.org/abs/2505.07539)] [[project](https://xdimlab.github.io/GIFStream/)] [[code](https://github.com/XDimLab/GIFStream)]
   - ⭐ Key idea: encodes dynamic Gaussian features as a streamable representation to improve bitrate-quality trade-offs for immersive free-viewpoint video.
   - 🧩 Category: Real-time / Mobile / Efficient
   - 🏷️ Tags: immersive-video, compression, streaming
 
-- **Instant4D: 4D Gaussian Splatting in Minutes (2025)** [[paper](https://arxiv.org/abs/2510.01119)] [[project](https://instant4d.github.io/)]
+- **Instant4D: 4D Gaussian Splatting in Minutes (2025)** [[paper](https://arxiv.org/abs/2510.01119)] [[project](https://instant4d.github.io/)] [[code](https://github.com/Zhanpeng1202/Instant4D)]
   - ⭐ Key idea: combines fast monocular reconstruction and aggressive grid pruning to recover practical 4D Gaussian scenes from casual videos in minutes.
   - 🧩 Category: Real-time / Mobile / Efficient
   - 🏷️ Tags: fast optimization, monocular, practical pipeline
@@ -185,7 +185,7 @@ These works are grouped by downstream use case rather than by representation alo
   - 🧩 Category: Domain-specific Applications
   - 🏷️ Tags: avatar, head, rigged-gaussians, reenactment
 
-- **Gaussian Head Avatar: Ultra High-fidelity Head Avatar via Dynamic Gaussians (2024)** [[paper](https://arxiv.org/abs/2312.03029)]
+- **Gaussian Head Avatar: Ultra High-fidelity Head Avatar via Dynamic Gaussians (2024)** [[paper](https://arxiv.org/abs/2312.03029)] [[project](https://yuelangx.github.io/)] [[code](https://github.com/YuelangX/Gaussian-Head-Avatar)]
   - ⭐ Key idea: optimizes neutral Gaussians together with an MLP deformation field to recover ultra-high-fidelity dynamic head avatars under sparse-view capture.
   - 🧩 Category: Domain-specific Applications
   - 🏷️ Tags: avatar, head, sparse-view, dynamic deformation
@@ -195,12 +195,12 @@ These works are grouped by downstream use case rather than by representation alo
   - 🧩 Category: Domain-specific Applications
   - 🏷️ Tags: avatar, full-body, pose-dependent, gaussian maps
 
-- **Animatable and Relightable Gaussians for High-fidelity Human Avatar Modeling (2024)** [[project](https://animatable-gaussians.github.io/relight/)]
+- **Animatable and Relightable Gaussians for High-fidelity Human Avatar Modeling (2024)** [[paper](https://arxiv.org/abs/2311.16096)] [[project](https://animatable-gaussians.github.io/relight/)]
   - ⭐ Key idea: extends Gaussian-map avatars with relightable appearance decomposition so animated humans can be rendered under novel illumination.
   - 🧩 Category: Domain-specific Applications
   - 🏷️ Tags: avatar, relighting, full-body, appearance decomposition
 
-- **Drivable 3D Gaussian Avatars (2024)** [[paper](https://arxiv.org/abs/2311.08581)] [[project](https://zollhoefer.com/papers/arXiv23_D3GA/page.html)]
+- **Drivable 3D Gaussian Avatars (2024)** [[paper](https://arxiv.org/abs/2311.08581)] [[project](https://zielon.github.io/d3ga/)] [[code](https://github.com/facebookresearch/D3GA)]
   - ⭐ Key idea: builds real-time drivable full-body avatars by combining Gaussian rendering with cage-based volumetric deformation driven by joints and keypoints.
   - 🧩 Category: Domain-specific Applications
   - 🏷️ Tags: avatar, drivable, full-body, telepresence
@@ -215,7 +215,7 @@ These works are grouped by downstream use case rather than by representation alo
   - 🧩 Category: Domain-specific Applications
   - 🏷️ Tags: avatar, clothing-transfer, layered-representation, garment-tracking
 
-- **Generalizable and Animatable Gaussian Head Avatar (2024)** [[paper](https://arxiv.org/abs/2410.07971)] [[code](https://github.com/xg-chu/GAGAvatar)]
+- **Generalizable and Animatable Gaussian Head Avatar (2024)** [[paper](https://arxiv.org/abs/2410.07971)] [[project](https://xg-chu.site/project_gagavatar/)] [[code](https://github.com/xg-chu/GAGAvatar)]
   - ⭐ Key idea: reconstructs controllable Gaussian head avatars from a single image in one forward pass, pushing avatar creation toward one-shot and generalizable settings.
   - 🧩 Category: Domain-specific Applications
   - 🏷️ Tags: avatar, head, one-shot, generalizable
@@ -230,12 +230,12 @@ These works are grouped by downstream use case rather than by representation alo
   - 🧩 Category: Domain-specific Applications
   - 🏷️ Tags: avatar, full-body, talking-avatar, mobile, AR
 
-- **Robust Dual Gaussian Splatting for Immersive Human-centric Volumetric Videos (DualGS) (2024)** [[paper](https://arxiv.org/abs/2409.08353)] [[project](https://nowheretrix.github.io/DualGS/)]
+- **Robust Dual Gaussian Splatting for Immersive Human-centric Volumetric Videos (DualGS) (2024)** [[paper](https://arxiv.org/abs/2409.08353)] [[project](https://nowheretrix.github.io/DualGS/)] [[code](https://github.com/HiFi-Human/DualGS)]
   - ⭐ Key idea: uses dual Gaussian layers for body motion and surface appearance so human-centric volumetric avatars stay temporally stable while remaining efficient to render and compress.
   - 🧩 Category: Domain-specific Applications
   - 🏷️ Tags: avatar, human-performance, volumetric-video, VR, immersive
 
-- **GaussianAvatar-Editor: Photorealistic Animatable Gaussian Head Avatar Editor (2025)** [[paper](https://arxiv.org/abs/2501.09978)]
+- **GaussianAvatar-Editor: Photorealistic Animatable Gaussian Head Avatar Editor (2025)** [[paper](https://arxiv.org/abs/2501.09978)] [[project](https://xiangyueliu.github.io/GaussianAvatar-Editor/)] [[code](https://github.com/Lxiangyue/GaussianAvatar-Editor)]
   - ⭐ Key idea: formulates text-driven editing for animatable Gaussian head avatars while explicitly handling occlusion and temporal consistency during edits.
   - 🧩 Category: Domain-specific Applications
   - 🏷️ Tags: avatar, head, editing, text-driven
@@ -252,26 +252,26 @@ These works are grouped by downstream use case rather than by representation alo
   - 🧩 Category: Domain-specific Applications
   - 🏷️ Tags: surgery, endoscopy, lightweight, efficient reconstruction
 
-- **Feature-EndoGaussian: Feature Distilled Gaussian Splatting in Surgical Deformable Scene Reconstruction (2025)** [[paper](https://arxiv.org/abs/2503.06161)]
+- **Feature-EndoGaussian: Feature Distilled Gaussian Splatting in Surgical Deformable Scene Reconstruction (2025)** [[paper](https://arxiv.org/abs/2503.06161)] [[code](https://github.com/kailathan/FE-4DGS)]
   - ⭐ Key idea: distills segmentation foundation-model features into dynamic surgical Gaussians to jointly improve reconstruction quality and semantic understanding.
   - 🧩 Category: Domain-specific Applications
   - 🏷️ Tags: surgery, semantics, segmentation, deformable scene
 
 #### HDR / Challenging Imaging
 
-- **Mono4DGS-HDR: High Dynamic Range 4D Gaussian Splatting from Alternating-exposure Monocular Videos (2025)** [[paper](https://arxiv.org/abs/2510.18489)] [[project](https://liujf1226.github.io/Mono4DGS-HDR/)]
+- **Mono4DGS-HDR: High Dynamic Range 4D Gaussian Splatting from Alternating-exposure Monocular Videos (2025)** [[paper](https://arxiv.org/abs/2510.18489)] [[project](https://liujf1226.github.io/Mono4DGS-HDR/)] [[code](https://github.com/shaham12/Mono4DGS-HDR)]
   - ⭐ Key idea: reconstructs dynamic HDR scenes from unposed alternating-exposure monocular videos with two-stage Gaussian optimization and temporal luminance regularization.
   - 🧩 Category: Domain-specific Applications
   - 🏷️ Tags: HDR, monocular, unposed, challenging capture
 
 #### Immersive Media / Volumetric Video
 
-- **Robust Dual Gaussian Splatting for Immersive Human-centric Volumetric Videos (DualGS) (2024)** [[paper](https://arxiv.org/abs/2409.08353)] [[project](https://nowheretrix.github.io/DualGS/)]
+- **Robust Dual Gaussian Splatting for Immersive Human-centric Volumetric Videos (DualGS) (2024)** [[paper](https://arxiv.org/abs/2409.08353)] [[project](https://nowheretrix.github.io/DualGS/)] [[code](https://github.com/HiFi-Human/DualGS)]
   - ⭐ Key idea: disentangles motion and appearance into joint Gaussians and skin Gaussians to improve temporal coherence, compression, and immersive human performance playback.
   - 🧩 Category: Domain-specific Applications
   - 🏷️ Tags: avatar, volumetric-video, human-performance, compression, VR
 
-- **GIFStream: 4D Gaussian-based Immersive Video with Feature Stream (2025)** [[paper](https://arxiv.org/abs/2505.07539)] [[project](https://xdimlab.github.io/GIFStream/)]
+- **GIFStream: 4D Gaussian-based Immersive Video with Feature Stream (2025)** [[paper](https://arxiv.org/abs/2505.07539)] [[project](https://xdimlab.github.io/GIFStream/)] [[code](https://github.com/XDimLab/GIFStream)]
   - ⭐ Key idea: introduces feature-stream-based 4D Gaussian encoding to make immersive free-viewpoint video more streamable without sacrificing dynamic quality.
   - 🧩 Category: Domain-specific Applications
   - 🏷️ Tags: immersive-video, streaming, free-viewpoint, compression
@@ -290,7 +290,7 @@ These works are grouped by downstream use case rather than by representation alo
 
 #### Avatar Generation
 
-- **AvatarPointillist: AutoRegressive 4D Gaussian Avatarization (2026)** [[paper](https://arxiv.org/abs/2604.04787)]
+- **AvatarPointillist: AutoRegressive 4D Gaussian Avatarization (2026)** [[paper](https://arxiv.org/abs/2604.04787)] [[project](https://kumapowerliu.github.io/AvatarPointillist/)] [[code](https://github.com/KumapowerLIU/AvatarPointillist)]
   - ⭐ Key idea: autoregressively constructs animatable 4D Gaussian avatars so human-centric dynamic scenes can be modeled with stronger structural priors.
   - 🧩 Category: Domain-specific Applications
   - 🏷️ Tags: avatar, human modeling, autoregressive, generation
@@ -327,9 +327,9 @@ The main table below focuses on **core 4DGS methods** rather than application-sp
 | DG-Mesh | geometry / meshing | dynamic Gaussian-to-mesh conversion | [code](https://github.com/Isabella98Liu/DG-Mesh) |
 | EndoGaussian | surgical scenes | medical dynamic reconstruction | [code](https://github.com/CUHK-AIM-Group/EndoGaussian) |
 | LGS | surgical scenes | lightweight medical 4DGS | [code](https://github.com/CUHK-AIM-Group/LGS) |
-| GIFStream | immersive video | streamable 4D Gaussian system | [project](https://xdimlab.github.io/GIFStream/) |
+| GIFStream | immersive video | streamable 4D Gaussian system | [code](https://github.com/XDimLab/GIFStream) |
 | TaoAvatar | avatars / AR | real-time full-body talking avatar | [project](https://pixelai-team.github.io/TaoAvatar/) |
-| DualGS | avatars / volumetric video | human performance playback system | [project](https://nowheretrix.github.io/DualGS/) |
+| DualGS | avatars / volumetric video | human performance playback system | [code](https://github.com/HiFi-Human/DualGS) |
 | HRAvatar | head avatars | relightable Gaussian avatar | [code](https://github.com/Pixel-Talk/HRAvatar) |
 
 
